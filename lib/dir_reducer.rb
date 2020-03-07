@@ -1,3 +1,3 @@
 def dir_reducer array
-  array
+  [array.pop]
 end

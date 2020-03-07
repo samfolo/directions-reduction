@@ -12,4 +12,8 @@ describe 'dir_reducer' do
   it 'returns ["EAST"] when passed ["WEST", "EAST", "EAST"]' do
     expect(dir_reducer(["WEST", "EAST", "EAST"])).to eq ["EAST"]
   end
+
+  it 'returns ["NORTH"] when passed ["NORTH", "NORTH", "SOUTH"]' do
+    expect(dir_reducer(["NORTH", "NORTH", "SOUTH"])).to eq ["NORTH"]
+  end
 end
